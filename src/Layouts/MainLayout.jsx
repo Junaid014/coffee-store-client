@@ -5,8 +5,11 @@ import Header from '../components/Header';
 const MainLayout = () => {
     return (
         <div>
-            <Header/>
-            <Outlet/>
+            <Header />
+            <div className='max-w-7xl mx-auto'>
+                <Outlet />
+            </div>
+
         </div>
     );
 };
