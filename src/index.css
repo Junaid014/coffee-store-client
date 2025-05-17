@@ -4,3 +4,15 @@
 body{
      font-family: "Rancho", cursive;
 }
+
+.banner{
+     background-image: url(./assets/more/3.png);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+   
+}
