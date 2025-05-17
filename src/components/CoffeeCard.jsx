@@ -48,7 +48,7 @@ const CoffeeCard = ({initialCoffee ,onDelete}) => {
     return (
        
             <div className="h-72 shadow-xl space-y-9 flex gap-3 justify-around bg-[#F5F4F1] items-center">
-            <figure><img className="" src={photo} alt="Movie" /></figure>
+            <figure><img className="w-56 h-60" src={photo} alt="Movie" /></figure>
             
                 <div>
                     <h2 className="card-title">Name: {name}</h2>
@@ -60,8 +60,8 @@ const CoffeeCard = ({initialCoffee ,onDelete}) => {
                
                     
                         <div className=" gap-2 mb-4 flex flex-col ">
-                            <button className="btn cursor-pointer">View</button>
-                            <Link to={``}>
+                            <Link to={`/coffee/${_id}`} className="btn cursor-pointer">View</Link>
+                            <Link to={`/updateCoffee/${_id}`}>
                         <button className="btn cursor-pointer">Edit</button>
                         </Link>
                             <button

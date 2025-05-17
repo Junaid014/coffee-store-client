@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 
 const AddCoffee = () => {
 
-    const handleCoffee = e => {
+    const handleAddCoffee = e => {
         e.preventDefault();
         const form = e.target;
         const formData = new FormData(form);
@@ -42,7 +42,7 @@ const AddCoffee = () => {
             <div className="bg-[#F4F3F0] p-24">
                 <h2 className="text-3xl text-center text-[#374151] font-extrabold">Add a Coffee</h2>
                 <p className='text-center text-[#1B1A1AB3] w-[900px] mx-auto mb-8 '>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
-                <form onSubmit={handleCoffee}>
+                <form onSubmit={handleAddCoffee}>
                     {/* form name and quantity row */}
                     <div className="md:flex mb-8">
                         <div className="form-control md:w-1/2">
